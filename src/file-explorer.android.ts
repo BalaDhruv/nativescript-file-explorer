@@ -1,5 +1,7 @@
-import { Common } from './file-explorer.common';
+import { FileExplorerBase } from './file-explorer.common';
 
-export class FileExplorer extends Common {
-    message = 'Fucker';
+export class FileExplorer extends FileExplorerBase {
+    public listStorage(): void {
+        console.log('Listing Storages..');
+    }
 }
